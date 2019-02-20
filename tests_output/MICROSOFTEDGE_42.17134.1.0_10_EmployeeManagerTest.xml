@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="2">
+
+  <testsuite name="EmployeeManagerTest"
+    errors="0" failures="1" hostname="" id="" package="EmployeeManagerTest" skipped="0"
+    tests="2" time="6.076" timestamp="">
+  
+    <testcase name="Employee 1 Changes" classname="EmployeeManagerTest" time="0.7500" assertions="0">
+    </testcase>
+  
+    <testcase name="Invalid Test" classname="EmployeeManagerTest" time="5.326" assertions="2">
+
+      <failure message="Expected element &lt;input[name=&#34;nameEntry&#34;]&gt; to have css property &#34;border-bottom&#34; which equals: &#34;2px solid rgb(204, 0, 0)&#34; - expected [0;32m&#34;equals &#39;2px solid rgb(204, 0, 0)&#39;&#34;[0m but got: [0;31m&#34;&#34;[0m">    at module.exports (C:\Users\atrai\DevMountainClassWork\Projects\EmployeeManagerPractice\TestAssets\InvalidChanges.js:13:17)
+    at Object.Invalid Test (C:\Users\atrai\DevMountainClassWork\Projects\EmployeeManagerPractice\Tests\EmployeeManagerTest.js:24:9)</failure>
+
+    <failure message="    at module.exports (C:\Users\atrai\DevMountainClassWork\Projects\EmployeeManagerPractice\TestAssets\InvalidChanges.js:13:17)">    at Object.Invalid Test (C:\Users\atrai\DevMountainClassWork\Projects\EmployeeManagerPractice\Tests\EmployeeManagerTest.js:24:9)</failure>
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>

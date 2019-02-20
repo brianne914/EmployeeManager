@@ -10,7 +10,7 @@ module.exports = (employeeManager, name, phoneNumber) => {
         .getText('@errorCard', function (result) {
             console.log(result.value)
             })
-        .expect.element('@nameInput').to.have.css('border-bottom', 'Red Underline Present').which.equals('2px solid rgb(204, 0, 0)')
+        .expect.element('input[name="nameEntry"]').to.have.css('border-bottom').which.equals('2px solid rgb(204, 0, 0)')
     employeeManager
-        .expect.element('@titleInput').to.have.css('border-bottom', 'Red Underline Present').which.equals('2px solid rgb(204, 0, 0)')
+        .expect.element('input[name="titleEntry"]').to.have.css('border-bottom').which.equals('2px solid rgb(204, 0, 0)')
 }

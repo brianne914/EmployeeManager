@@ -1,6 +1,6 @@
 const properties = require('./nightwatch.props')
 module.exports = {
-  "src_folders": "EmployeeManagerTest",
+  "src_folders": "Tests",
   "page_objects_path": "PageObjects",
 
   "selenium": {
@@ -10,10 +10,13 @@ module.exports = {
     "port": 4445,
     "cli_args": {
       "webdriver.chrome.driver": properties.resourcePath + properties.chromedriver,
+      "webdriver.gecko.driver": properties.resourcePath + properties.geckodriver,
+      "webdriver.edge.driver": properties.resourcePath + properties.edgedriver,
     }
   },
 
   "test_settings": {
+    "test_workers": true,
     "default": {
       "launch_url": "http://localhost",
       "selenium_port": 4445,
@@ -21,13 +24,10 @@ module.exports = {
       "silent": true,
       "screenshots": {
         "enabled": false,
-        "path": ""
+        "path": "",
       },
       "desiredCapabilities": {
         "browserName": "chrome",
-        "chromeOptions": {
-          "args": ["--disable-notifications"]
-        }
       }
     },
 
