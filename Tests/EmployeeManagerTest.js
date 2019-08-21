@@ -23,8 +23,11 @@ module.exports = {
     'Invalid Test': browser => {
         invalidChanges(employeeManagerPage, 'Andrew Smith is the best mentor i swear to Batman', '12345678901234567890')
 
-    }
+    },
+    'NEW test': browser => {
 
+
+},
 }
 
 
